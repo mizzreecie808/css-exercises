@@ -1,3 +1,14 @@
+/* SPECIFICITY
+  1) #id
+  2) .class
+  3) type
+=============================================================== */
+/* COMBINATORS
+  *: universal selector
+  .class.second-class: chaining selector
+  .class .second-class: empty space = descendant combinator
+  .class > .second-class: child combinator
+=============================================================== */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,16 +19,15 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
-  font-weight: 800;
 }
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +39,7 @@ body {
   font-size: 20px;
 }
 
-.child {
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
